@@ -157,7 +157,7 @@ function isLoggedIn(req, res, next){
 
 //Admin Auth 
 function AdminAuthorization(req, res, next){
-  if(req.isAuthenticated() && req.user.id === "6231eff0391b6cb57f445d49"){
+  if(req.isAuthenticated() && req.user.id === "6231eff0391b6cb57f445d49" || req.user.id === "626b5d06dc417f0a9e9986b4" || req.user.id === "626b5f55bb5f0c0f419cf603"){
       return next();
   } 
   res.send('You do not have permisiion to do that!');
